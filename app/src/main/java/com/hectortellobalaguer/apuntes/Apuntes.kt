@@ -23,7 +23,7 @@ fun entradaSalidaDatos(){
     print("Hola")
     println(" como estas")
 
-    println("Hola \n como estas")
+    println("Hola \n como estassssssssssssssssssss")
 
     //Leer de teclado
     val nombre = readLine()
