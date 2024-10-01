@@ -5,7 +5,7 @@ fun main() {
     var contador = 0
 
     while (contador < 5) {
-        print("Introduce el número ${contador + 1}: ")
+        print("Introduce eel número ${contador + 1}: ")
         val input = readlnOrNull()
 
         try {
