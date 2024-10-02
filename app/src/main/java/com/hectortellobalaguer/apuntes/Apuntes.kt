@@ -21,7 +21,7 @@ fun controlNulos(){
 fun entradaSalidaDatos(){
     //Escribir por consola
     print("Hola")
-    println(" como estas")
+    println(" como estass")
 
     println("Hola \n como estass")
 
