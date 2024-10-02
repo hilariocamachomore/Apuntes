@@ -10,8 +10,6 @@ fun main() {
     // Conversion a Entero
     numero = cadena.toInt()
     println(numero)
-//    numero = bandera.toInt()
-//    println(numero)
     numero = decimal.toInt()
     println(numero)
     numero = caracter.toInt()
@@ -27,9 +25,13 @@ fun main() {
     cadena = caracter.toString()
     println(cadena)
 
-
-
-
+    // Conversion a Double
+    decimal = numero.toDouble()
+    println(decimal)
+    decimal = cadena.toDouble()
+    println(decimal)
+    decimal = caracter.toDouble()
+    println(decimal)
 
 //    medias()
 }
