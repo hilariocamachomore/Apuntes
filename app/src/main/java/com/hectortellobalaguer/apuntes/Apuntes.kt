@@ -1,9 +1,9 @@
 package com.hectortellobalaguer.apuntes
 
 fun main() {
-    muestraDeVariables()
+//    muestraDeVariables()
 //    entradaSalidaDatos()
-//    controlNulos()
+    controlNulos()
 //    operadores()
 
 }
@@ -23,12 +23,12 @@ fun entradaSalidaDatos(){
     print("Hola")
     println(" como estas")
 
-    println("Hola \n como estalllllllllllemos")
+    println("Hola \n como estass")
 
     //Leer de teclado
     val nombre = readLine()
-    println("Hola $nombre")
-    println("Hola " + nombre)
+    println("Holass $nombre")
+    println("Holass " + nombre)
 }
 
 fun muestraDeVariables(){

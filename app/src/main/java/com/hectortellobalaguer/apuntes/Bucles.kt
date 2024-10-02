@@ -1,13 +1,13 @@
 package com.hectortellobalaguer.apuntes
 
 fun main(){
-    alernativas()
+    alternativas()
     repetitivas()
 }
 
 fun alternativas(){
-    println("Sentencias alternativas")
+    println("Sentencias alternativass")
 }
 fun repetitivas(){
-    println("Sentencias repetitivas")
+    println("Sentencias repetitivass")
 }
