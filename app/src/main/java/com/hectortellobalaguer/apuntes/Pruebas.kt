@@ -33,7 +33,7 @@ fun main() {
     decimal = caracter.toDouble()
     println(decimal)
 
-//    medias()
+//    medias())
 }
 
 fun medias(){
