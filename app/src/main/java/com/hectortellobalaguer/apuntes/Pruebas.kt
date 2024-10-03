@@ -33,6 +33,8 @@ fun main() {
     decimal = caracter.toDouble()
     println(decimal)
 
+//    Si lo he terminado en el aula.
+
 //    medias()
 }
 
