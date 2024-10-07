@@ -9,5 +9,5 @@ fun alternativas(){
     println("Sentencias alternativaNNNNNN")
 }
 fun repetitivas(){
-    println("Sentencias repetitivaNNNNNNN")
+    println("Sentencias repetitivaNNNNNNNN")
 }
