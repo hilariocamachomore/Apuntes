@@ -6,8 +6,8 @@ fun main(){
 }
 
 fun alternativas(){
-    println("Sentencias alternativañññññññ")
+    println("Sentencias alternativapppppppp")
 }
 fun repetitivas(){
-    println("Sentencias repetitivaññññññññ")
+    println("Sentencias repetitivapppppppp")
 }
