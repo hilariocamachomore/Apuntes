@@ -7,7 +7,7 @@ fun main() {
     var decimal:Double = 34.789
     var caracter:Char = '4'
 
-    // Conversion a Entero
+    println("Conversion a Entero")
     numero = cadena.toInt()
     println(numero)
     numero = decimal.toInt()
@@ -15,7 +15,7 @@ fun main() {
     numero = caracter.toInt()
     println(numero)
 
-    // Conversion a Cadena
+    println("Conversion a Cadena")
     cadena = numero.toString()
     println(cadena)
     cadena = bandera.toString()
@@ -25,7 +25,7 @@ fun main() {
     cadena = caracter.toString()
     println(cadena)
 
-    // Conversion a Double
+    println("Conversion a Double")
     decimal = numero.toDouble()
     println(decimal)
     decimal = cadena.toDouble()
