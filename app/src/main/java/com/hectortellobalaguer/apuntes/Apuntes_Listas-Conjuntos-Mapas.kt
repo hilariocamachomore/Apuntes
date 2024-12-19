@@ -44,6 +44,7 @@ fun mapas() {
     println("Tamaño del mapa: ${capitales.size}") // Imprime: Tamaño del mapa: 3
     for ((pais, capital) in capitales) {
         println("$pais: $capital")
+
     }
 
     val edades = mutableMapOf("Alice" to 25, "Bob" to 30, "Charlie" to 35)
