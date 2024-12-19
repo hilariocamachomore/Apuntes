@@ -15,6 +15,12 @@ fun main() {
     numero = caracter.toInt()
     println(numero)
 
+    numero = 45
+    cadena ="654"
+    bandera = true
+    decimal = 34.789
+    caracter = '4'
+
     println("Conversion a Cadena")
     cadena = numero.toString()
     println(cadena)
@@ -24,6 +30,12 @@ fun main() {
     println(cadena)
     cadena = caracter.toString()
     println(cadena)
+
+    numero = 45
+    cadena ="654"
+    bandera = true
+    decimal = 34.789
+    caracter = '4'
 
     println("Conversion a Double")
     decimal = numero.toDouble()
