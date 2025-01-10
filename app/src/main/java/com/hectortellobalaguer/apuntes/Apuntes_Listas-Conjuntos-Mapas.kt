@@ -1,9 +1,10 @@
 package com.hectortellobalaguer.apuntes
 
 fun main(){
-    listas()
+//    listas()
 //    conjuntos()
 //    mapas()
+    vectores()
 }
 
 fun listas() {
@@ -46,6 +47,8 @@ fun mapas() {
         println("$pais: $capital")
 
     }
+    println("Capital de Francia: ${capitales["Francia"]}") // Imprime: Capital de Francia: París
+
 
     val edades = mutableMapOf("Alice" to 25, "Bob" to 30, "Charlie" to 35)
     println("Edades: $edades") // Imprime: Edades: {Alice=25, Bob=30, Charlie=35}
@@ -54,5 +57,23 @@ fun mapas() {
 
     val edadDeAlice = edades.getOrDefault("Alice", 0)
     println("Edad de Alice: $edadDeAlice") // Imprime: Edad de Alice: 25
+    edades["Bob"] = 31 // Actualiza la edad de Bob
+    edades.remove("Charlie") // Elimina a Charlie del mapa
+    edades["David"] = 28 // Agrega a David al mapa
+
 }
 
+fun vectores() {
+    val frutas = arrayOf("manzana", "banana", "cereza")
+    val ceros = Array(5) { 0 } // Crea un array de enteros de tamaño 5 y lo inicializa con ceros
+
+    val primerafrutav = frutas[0] // Obtiene la primera fruta del array
+    frutas[1] = "naranja" // Cambia la segunda fruta
+    println("Frutas: ${frutas.contentToString()}") // Imprime: Frutas: [manzana, naranja, cereza]
+    println("Tamaño del array: ${frutas.size}") // Imprime: Tamaño del array: 3
+    println("¿La fruta está en el array? ${"manzana" in frutas}") // Imprime: ¿La fruta está en el array? true
+    println("Índice de la fruta: ${frutas.indexOf("naranja")}") // Imprime: Índice de la fruta: 1
+    for (fruta in frutas) {
+        println(fruta)
+    }
+}
