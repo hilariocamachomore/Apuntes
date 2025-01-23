@@ -1,8 +1,27 @@
 package com.hectortellobalaguer.apuntes
+import kotlin.random.Random
 
-fun main() {
+fun ma48in() {
+    var preguntasCorrectas = 0
+    val totalPreguntas = 10
 
-    medias()
+    while (preguntasCorrectas < totalPreguntas) {
+        val numero1 = Random.nextInt(1, 11) // Números del 1 al 10
+        val numero2 = Random.nextInt(1, 11)
+
+        println("¿Cuánto es $numero1 x $numero2?")
+        val respuestaUsuario = readLine()?.toIntOrNull()
+
+        if (respuestaUsuario == null || respuestaUsuario != numero1 * numero2) {
+            println("Incorrecto. La respuesta correcta es ${numero1 * numero2}.")
+            preguntasCorrectas = 0 // Reiniciar la cuenta
+        } else {
+            println("¡Correcto!")
+            preguntasCorrectas++
+        }
+    }
+
+    println("¡Felicidades! Has completado las $totalPreguntas preguntas correctamente.")
 }
 
 fun medias(){
