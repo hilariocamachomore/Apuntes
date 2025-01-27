@@ -1,7 +1,7 @@
 package com.hectortellobalaguer.apuntes.ejercicios
 
 fun main() {
-    Condicionales_01_Par()
+//    Condicionales_01_Par()
 //    Condicionales_02_Division()
 //    Condicionales_03_Multiplo()
 //    Condicionales_04_Mayor()
@@ -83,11 +83,11 @@ fun Condicionales_04_Mayor() {
 
 fun Condicionales_05_Nota() {
     println("Introduce un número del 1 al 10:")
-    val nota = readLine()?.toIntOrNull()
+    var nota = readLine()?.toIntOrNull()
 
     if (nota == null || nota !in 1..10) {
         println("Entrada inválida. Por favor, introduce un número del 1 al 10.")
-    } else {
+    }else{
         val nombreNota = when (nota) {
             1, 2, 3, 4 -> "Suspenso"
             5 -> "Suficiente"
@@ -98,4 +98,5 @@ fun Condicionales_05_Nota() {
         }
         println("La nota correspondiente al número $nota es: $nombreNota")
     }
+
 }

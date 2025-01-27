@@ -12,7 +12,6 @@ fun controlNulos(){
 
     var nombre:String? = null
 
-//    println(nombre.length)
     if(nombre != null){
         println(nombre.length)
     }
