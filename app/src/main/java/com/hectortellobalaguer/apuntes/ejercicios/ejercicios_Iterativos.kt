@@ -1,9 +1,13 @@
 package com.hectortellobalaguer.apuntes.ejercicios
 
+import kotlin.math.pow
+
 fun main(){
 //    Iterativos_01_SumaPositivos()
 //    Iterativos_02_UsuarioContrase()
-    Iterativos_03_Divisibles()
+//    Iterativos_03_Divisibles()
+//    Iterativos_04_Media()
+    Iterativos_05_Interes()
 }
 
 fun Iterativos_01_SumaPositivos() {
@@ -98,6 +102,64 @@ fun Iterativos_03_Divisibles() {
         if (i % 3 == 0) {
             println(i)
         }
+    }
+}
+
+fun Iterativos_04_Media() {
+    var sumaNotas = 0.0
+    var contadorNotas = 0
+    var continuar = true
+
+    while (continuar) {
+        println("Introduce una nota (o escribe 'fin' para terminar):")
+        val entrada = readLine()
+
+        if (entrada.equals("fin", ignoreCase = true)) {
+            continuar = false
+        } else {
+            val nota = entrada?.toDoubleOrNull()
+            if (nota != null) {
+                sumaNotas += nota
+                contadorNotas++
+            } else {
+                println("Entrada inválida. Por favor, introduce un número o 'fin'.")
+            }
+        }
+    }
+
+    if (contadorNotas > 0) {
+        val media = sumaNotas / contadorNotas
+        println("La media de las notas introducidas es: $media")
+    } else {
+        println("No se ha introducido ninguna nota.")
+    }
+}
+
+
+
+fun Iterativos_05_Interes() {
+    var continuar = true
+
+    while (continuar) {
+        println("Introduce la cantidad de euros (E):")
+        val euros = readLine()?.toDoubleOrNull()
+
+        println("Introduce el interés (R) (ejemplo: 0.05 para 5%):")
+        val interes = readLine()?.toDoubleOrNull()
+
+        println("Introduce el número de períodos de tiempo (N):")
+        val periodos = readLine()?.toIntOrNull()
+
+        if (euros == null || interes == null || periodos == null) {
+            println("Entrada inválida. Por favor, introduce valores numéricos válidos.")
+        } else {
+            val dineroFinal = euros * (1 + interes).pow(periodos)
+            println("El dinero que se obtendrá es: $dineroFinal euros")
+        }
+
+        println("¿Desea realizar otro cálculo? (s/n)")
+        val respuesta = readLine()?.lowercase()
+        continuar = respuesta == "s"
     }
 }
 
