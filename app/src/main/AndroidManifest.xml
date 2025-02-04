@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Apuntes"
         tools:targetApi="31">
         <activity
+            android:name=".activities.PrimeraActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenuActivity"
             android:exported="true">
             <intent-filter>
