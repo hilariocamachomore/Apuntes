@@ -30,7 +30,7 @@ class MenuActivity : AppCompatActivity() {
 
     private fun irActividadPrimera() {
 
-        Toast.makeText(this, "prueba", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Vayamos a la primera actividad", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, PrimeraActivity::class.java)
         startActivity(intent)
     }
