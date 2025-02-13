@@ -1,13 +1,17 @@
 package com.hectortellobalaguer.apuntes.activities
 
 import android.os.Bundle
+import android.view.View
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.hectortellobalaguer.apuntes.R
+import com.bumptech.glide.Glide
 
 class PrimeraActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -17,5 +21,8 @@ class PrimeraActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
     }
+
+
 }
