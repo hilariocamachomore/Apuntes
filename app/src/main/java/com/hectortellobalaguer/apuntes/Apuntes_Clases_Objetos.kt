@@ -1,7 +1,7 @@
 package com.hectortellobalaguer.apuntes
 
-class Persona(val nombre:String, val edad:Int){
-    fun saludar(){
+class Persona(var nombre:String, val edad:Int){
+    fun saludart(){
         println("Hola, soy $nombre y tengo $edad años")
     }
 }
@@ -10,11 +10,14 @@ class PersonaDos(val nombre:String, val edad:Int){
 
     constructor(nombre:String):this(nombre, 0)
     constructor():this("Fulanito", 0)
+    constructor(edad:Int):this("Menganito", edad)
 
     fun saludar(){
         println("Hola, soy $nombre y tengo $edad años")
     }
 }
+
+
 
 class Coche(private var marca:String, var modelo:String){
     fun muestraMarca(){
@@ -26,9 +29,25 @@ class Coche(private var marca:String, var modelo:String){
 
 }
 
+
 open class Animal(val nombre:String, val edad:Int){
     open fun hacerSonido(){
         println("El animal hace un sonido")
+    }
+    fun comer(){
+        println("El animal está comiendo")
+    }
+    fun dormir(){
+        println("El animal está durmiendo")
+    }
+    fun moverse(){
+        println("El animal está moviéndose")
+    }
+    fun respirar(){
+        println("El animal está respirando")
+    }
+    fun reproducirse(){
+        println("El animal está reproduciéndose")
     }
 }
 
@@ -36,6 +55,13 @@ class Perro(nombre:String, edad:Int):Animal(nombre, edad){
     override fun hacerSonido(){
         println("El perro $nombre de $edad años de edad hace guau")
     }
+}
+
+fun Herencia() {
+    val animal = Animal("Fido", 3)
+    animal.hacerSonido()
+    val migoss = Perro("Migue", 5)
+    migoss.hacerSonido()
 }
 
 open class Vehiculo() {
@@ -72,15 +98,22 @@ fun main(){
 //    InstanciaObjetos()
 //    Constructores()
 //    Encapsulamiento()
-//    Herencia()
-    Polimorfismo()
+    Herencia()
+//    Polimorfismo()
 //    Abstraccion()
 
 }
 
 fun InstanciaObjetos() {
-    val persona1 = Persona("Miguela", 25)
-    persona1.saludar()
+    val Sara = Persona("Sara", 17)
+    Sara.saludart()
+    Sara.saludart()
+    Sara.nombre = "Sara Maria"
+    Sara.saludart()
+
+    val Hugo = Persona("Hugo", 18)
+    Hugo.saludart()
+
 }
 
 fun Constructores() {
@@ -100,14 +133,11 @@ fun Encapsulamiento() {
     micoche.modelo = "Mustang"
     micoche.muestraMarca()
     println(micoche.modelo)
+
 }
 
-fun Herencia() {
-    val animal = Animal("Fido", 3)
-    animal.hacerSonido()
-    val migoss = Perro("Migue", 5)
-    migoss.hacerSonido()
-}
+
+
 
 fun Polimorfismo() {
     val vehiculo1: Vehiculo = Moto()
