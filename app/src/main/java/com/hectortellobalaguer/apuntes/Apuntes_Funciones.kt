@@ -1,12 +1,12 @@
 package com.hectortellobalaguer.apuntes
 
 fun main() {
-    printMesage("Hello amigüito")
-    printMessageWithPrefix("Hello", "Log")
+    printMesage("Hello amigüito querido")
+    printMessageWithPrefix("Hellooooooooooooo", "Log")
     printMessageWithPrefix("Hello")
     printMessageWithPrefix(prefix = "Log", message = "Hello")
-    println(sum(6,7))
-    println(multiply(5,4))
+    println(sum(6,77))
+    println(multiply(547,4))
 
 
 }

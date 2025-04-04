@@ -3,8 +3,8 @@ package com.hectortellobalaguer.apuntes
 fun main(){
 //    listas()
 //    conjuntos()
-//    mapas()
-    vectores()
+    mapas()
+//    vectores()
 }
 
 fun listas() {
@@ -24,7 +24,7 @@ fun conjuntos() {
     val conjuntoDeNumeros = setOf(1, 2, 3, 3)
     println("Conjunto de números: $conjuntoDeNumeros") // Imprime: Conjunto de números: [1, 2, 3]
     println("Tamaño del conjunto: ${conjuntoDeNumeros.size}") // Imprime: Tamaño del conjunto: 3
-    println("¿El número 2 está en el conjunto? ${conjuntoDeNumeros.contains(2)}") // Imprime: ¿El número 2 está en el conjunto? true
+    println("¿El número 2 está en el conjunto? ${conjuntoDeNumeros.contains(4)}") // Imprime: ¿El número 2 está en el conjunto? true
 
     val numeros = mutableSetOf(1, 2, 3, 4)
     val letras = setOf('a', 'b', 'c')

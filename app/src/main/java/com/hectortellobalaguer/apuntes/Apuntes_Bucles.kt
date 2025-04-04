@@ -8,7 +8,7 @@ fun main(){
 fun alternativas(){
     println("-----------Sentencias alternativas----------------")
     val a = 10
-    val b = 20
+    val b = 10
 
     if (a>b) {
         println("a es mayor que b")

@@ -1,12 +1,14 @@
 package com.hectortellobalaguer.apuntes
 
 fun main() {
-   muestraDeVariables()
-//    entradaSalidaDatos()
+//   muestraDeVariables()
+    entradaSalidaDatos()
 //    controlNulos()
 //    operadores()
 
 }
+
+
 fun controlNulos(){
     /*En este procedimiento se van a explicar los operadores de control de nulos*/
 
@@ -24,6 +26,7 @@ fun entradaSalidaDatos(){
 
     println("Hola \n como estass")
 
+
     //Leer de teclado
     val nombre = readLine()
     println("Holass $nombre")
@@ -32,7 +35,7 @@ fun entradaSalidaDatos(){
 
 fun muestraDeVariables(){
 
-    var varIntExplicito:Int = 100
+    val varIntExplicito:Int = 100
     var varIntInferido = 214875
 
     var varLongExplicito:Long = 325684874512
