@@ -19,6 +19,11 @@ class MiClasePublica {
 }
 
 fun pruebasGetterSetter() {
+    val objMiClase: MiClase = MiClase()
+    println(objMiClase.miPropiedad)
+    objMiClase.miPropiedad = "Hola Mundo"
+    println(objMiClase.miPropiedad)
+
     val obj = MiClasePublica()
     println(obj.miPropiedadPublica) // Acceso público (llama al getter)
     obj.miPropiedadPublica = -5 // Acceso público (llama al setter)
@@ -35,14 +40,21 @@ class MiClasePrivada {
     fun mostrarPropiedad() {
         println(miPropiedadPrivada) // Acceso permitido dentro de la clase
     }
+    fun modificarPropiedad(nuevoValor: String) {
+        miPropiedadPrivada = nuevoValor // Acceso permitido dentro de la clase
+    }
 }
 
 fun pruebasGetterSetter2() {
     val obj = MiClasePrivada()
     // println(obj.miPropiedadPrivada) // Error: Acceso no permitido desde fuera
     obj.mostrarPropiedad()
-}
+    //obj.miPropiedadPrivada = " Nuevo valor" //Error:Acceso no permitido desde fuera
+    obj.modificarPropiedad("      Nuevo valor")
+    obj.mostrarPropiedad()
 
+
+}
 
 open class ClaseBase {
     protected var miPropiedadProtegida: Boolean = false
@@ -94,7 +106,7 @@ fun pruebasGetterSetter4() {
     println(obj.miPropiedad)
 }
 
-//class Persona(var nombre: String, var edad: Int) {
+//class Personaje(var nombre: String, var edad: Int) {
 //    var nombre: String = nombre
 //        get() = field.trim() // Getter personalizado: elimina espacios en blanco
 //        set(value) {
@@ -106,17 +118,30 @@ fun pruebasGetterSetter4() {
 //            field = if (value >= 0) value else 0 // Setter personalizado: valida la edad
 //        }
 //}
-//
-//fun pruebasGetterSetter5() {
-//    val persona = Persona("  juan pérez  ", -5)
-//    println(persona.nombre) // Salida: Juan pérez (getter: sin espacios, setter: capitalizado)
-//    println(persona.edad)   // Salida: 0 (setter: validación, no puede ser negativa)
-//
-//    persona.nombre = "  maría  garcía  "
-//    persona.edad = 25
-//    println(persona.nombre) // Salida: María  garcía (getter: sin espacios, setter: capitalizado)
-//    println(persona.edad)   // Salida: 25
-//}
+
+class Personaje(nombreInicial: String, edadInicial: Int) {
+    var nombre: String = nombreInicial
+        get() = field.trim()
+        set(value) {
+            field = value + "personaje"
+        }
+
+    var edad: Int = if (edadInicial >= 0) edadInicial else 0
+        set(value) {
+            field = if (value >= 0) value else 0
+        }
+}
+
+fun pruebasGetterSetter5() {
+    val persona = Personaje("  juan pérez  ", -5)
+    println(persona.nombre) // Salida: Juan pérez (getter: sin espacios, setter: capitalizado)
+    println(persona.edad)   // Salida: 0 (setter: validación, no puede ser negativa)
+
+    persona.nombre = "  maría  garcía  "
+    persona.edad = 25
+    println(persona.nombre) // Salida: María  garcía (getter: sin espacios, setter: capitalizado)
+    println(persona.edad)   // Salida: 25
+}
 
 class Circulo(val radio: Double) {
     val area: Double
@@ -157,12 +182,12 @@ fun pruebasGetterSetter7() {
 
 fun main() {
 
-    pruebasGetterSetter()
-    pruebasGetterSetter2()
-    pruebasGetterSetter3()
-    pruebasGetterSetter4()
+//    pruebasGetterSetter()
+//    pruebasGetterSetter2()
+//    pruebasGetterSetter3()
+//    pruebasGetterSetter4()
 //    pruebasGetterSetter5()
-    pruebasGetterSetter6()
+//    pruebasGetterSetter6()
     pruebasGetterSetter7()
 
 }
