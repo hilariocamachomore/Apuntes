@@ -2,7 +2,7 @@ package com.hectortellobalaguer.apuntes
 
 
 class MiClase {
-    var miPropiedad: String = "Mierda"
+    var miPropiedad: String = "Hola"
         get() = field // Getter personalizado (opcional)
         set(value) { // Setter personalizado (opcional)
             // Lógica del setter
@@ -52,7 +52,6 @@ fun pruebasGetterSetter2() {
     //obj.miPropiedadPrivada = " Nuevo valor" //Error:Acceso no permitido desde fuera
     obj.modificarPropiedad("      Nuevo valor")
     obj.mostrarPropiedad()
-
 
 }
 
