@@ -8,11 +8,11 @@ class Libro(titulo: String, autor: String, numPaginas: Int) {
     var autor: String = autor
         private set // Encapsulamiento: Solo se puede modificar desde dentro de la clase
 
-    var numPaginas: Int = numPaginas
+    var numPaginas: Int = if (numPaginas >= 0) numPaginas else 0
         set(value) { // Setter personalizado para la validación
             field = if (value >= 0) value else 0
         }
-        get() = field // Getter personalizado
+        //get() = field // Getter personalizado
 
     // Método para mostrar la información del libro
     fun mostrarInformacion() {

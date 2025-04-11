@@ -57,12 +57,6 @@ class Perro(nombre:String, edad:Int):Animal(nombre, edad){
     }
 }
 
-fun Herencia() {
-    val animal = Animal("Fido", 3)
-    animal.hacerSonido()
-    val migoss = Perro("Migue", 5)
-    migoss.hacerSonido()
-}
 
 open class Vehiculo() {
     open fun tipoDeVehiculo() {
@@ -80,6 +74,16 @@ class Barco : Vehiculo() {
         println("Este es un barco")
     }
 }
+
+
+fun Polimorfismo() {
+    val vehiculo1: Vehiculo = Moto()
+    val vehiculo2: Vehiculo = Barco()
+    vehiculo1.tipoDeVehiculo()
+    vehiculo2.tipoDeVehiculo()
+}
+
+
 abstract class Figura {
     abstract fun calcularArea(): Double
     fun mostrar(){
@@ -98,8 +102,8 @@ fun main(){
 //    InstanciaObjetos()
 //    Constructores()
 //    Encapsulamiento()
-    Herencia()
-//    Polimorfismo()
+//    Herencia()
+    Polimorfismo()
 //    Abstraccion()
 
 }
@@ -136,15 +140,15 @@ fun Encapsulamiento() {
 
 }
 
-
-
-
-fun Polimorfismo() {
-    val vehiculo1: Vehiculo = Moto()
-    val vehiculo2: Vehiculo = Barco()
-    vehiculo1.tipoDeVehiculo()
-    vehiculo2.tipoDeVehiculo()
+fun Herencia() {
+    val animal = Animal("Fido", 3)
+    animal.hacerSonido()
+    val migoss = Perro("Migue", 5)
+    migoss.hacerSonido()
 }
+
+
+
 
 fun Abstraccion() {
     val cuadrado = Cuadrado(5.0)

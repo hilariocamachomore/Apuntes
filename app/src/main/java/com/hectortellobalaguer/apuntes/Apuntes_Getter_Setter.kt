@@ -47,9 +47,9 @@ class MiClasePrivada {
 
 fun pruebasGetterSetter2() {
     val obj = MiClasePrivada()
-    // println(obj.miPropiedadPrivada) // Error: Acceso no permitido desde fuera
+//     println(obj.miPropiedadPrivada) // Error: Acceso no permitido desde fuera
     obj.mostrarPropiedad()
-    //obj.miPropiedadPrivada = " Nuevo valor" //Error:Acceso no permitido desde fuera
+//    obj.miPropiedadPrivada = " Nuevo valor" //Error:Acceso no permitido desde fuera
     obj.modificarPropiedad("      Nuevo valor")
     obj.mostrarPropiedad()
 
@@ -75,7 +75,7 @@ class SubClase : ClaseBase() {
 
 fun pruebasGetterSetter3() {
     val objBase = ClaseBase()
-    // println(objBase.miPropiedadProtegida) // Error: Acceso no permitido desde fuera de la clase base o subclases
+//     println(objBase.miPropiedadProtegida) // Error: Acceso no permitido desde fuera de la clase base o subclases
 
     val objSub = SubClase()
     objSub.modificarPropiedad()
@@ -100,8 +100,8 @@ class MiClaseControlada {
 fun pruebasGetterSetter4() {
     val obj = MiClaseControlada()
     println(obj.miPropiedad) // Acceso al getter público
-    // obj.miPropiedad = -5 // Error: Setter privado, no accesible desde fuera
-    obj.modificarPropiedad(10) // Llama al método que usa el setter privado
+//     obj.miPropiedad = -5 // Error: Setter privado, no accesible desde fuera
+    obj.modificarPropiedad(100) // Llama al método que usa el setter privado
     println(obj.miPropiedad)
 }
 
@@ -185,9 +185,9 @@ fun main() {
 //    pruebasGetterSetter2()
 //    pruebasGetterSetter3()
 //    pruebasGetterSetter4()
-//    pruebasGetterSetter5()
+    pruebasGetterSetter5()
 //    pruebasGetterSetter6()
-    pruebasGetterSetter7()
+//    pruebasGetterSetter7()
 
 }
 
