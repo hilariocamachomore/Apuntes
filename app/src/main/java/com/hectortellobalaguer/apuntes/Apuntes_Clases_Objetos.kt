@@ -76,14 +76,6 @@ class Barco : Vehiculo() {
 }
 
 
-fun Polimorfismo() {
-    val vehiculo1: Vehiculo = Moto()
-    val vehiculo2: Vehiculo = Barco()
-    vehiculo1.tipoDeVehiculo()
-    vehiculo2.tipoDeVehiculo()
-}
-
-
 abstract class Figura {
     abstract fun calcularArea(): Double
     fun mostrar(){
@@ -103,8 +95,8 @@ fun main(){
 //    Constructores()
 //    Encapsulamiento()
 //    Herencia()
-    Polimorfismo()
-//    Abstraccion()
+//    Polimorfismo()
+    Abstraccion()
 
 }
 
@@ -147,7 +139,12 @@ fun Herencia() {
     migoss.hacerSonido()
 }
 
-
+fun Polimorfismo() {
+    val vehiculo1: Vehiculo  = Moto()
+    val vehiculo2: Vehiculo = Barco()
+    vehiculo1.tipoDeVehiculo()
+    vehiculo2.tipoDeVehiculo()
+}
 
 
 fun Abstraccion() {
