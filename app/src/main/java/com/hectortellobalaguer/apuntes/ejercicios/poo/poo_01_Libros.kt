@@ -1,12 +1,7 @@
 package com.hectortellobalaguer.apuntes.ejercicios.poo
 
-class Libro(titulo: String, autor: String, numPaginas: Int) {
+class Libro(val titulo: String,val autor: String, numPaginas: Int) {
     // Propiedades
-    var titulo: String = titulo
-        private set // Encapsulamiento: Solo se puede modificar desde dentro de la clase
-
-    var autor: String = autor
-        private set // Encapsulamiento: Solo se puede modificar desde dentro de la clase
 
     var numPaginas: Int = if (numPaginas >= 0) numPaginas else 0
         set(value) { // Setter personalizado para la validación
