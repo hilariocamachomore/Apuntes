@@ -69,4 +69,3 @@ fun funciones_05_intercambia(numeros: IntArray) {
         println("La función intercambia necesita un array de dos números")
     }
 }
-
