@@ -4,7 +4,14 @@ package com.hectortellobalaguer.apuntes.ejercicios
 fun main() {
     // Ejemplo de uso de funciones_01_saluda
     println("Ejemplo de funciones_01_saluda:")
-    funciones_01_saluda(5) // Imprime "Hola " 5 veces
+    print("Introduce el número de veces que quieres que te saluden: ")
+    val veces = readln().toIntOrNull() // Lee la línea y la convierte a entero
+
+    if (veces != null) {
+        funciones_01_saluda(veces)
+    } else {
+        println("Entrada no válida. Por favor, introduce un número.")
+    }
 
     // Ejemplo de uso de funciones_02_tabla
     println("\nEjemplo de funciones_02_tabla:")

@@ -11,7 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.hectortellobalaguer.apuntes.activities.PrimeraActivity
 
 class MenuActivity : AppCompatActivity() {
-    var btnActivityPrimera: Button?= null;
+    var btnActivityPrimera: Button?= null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

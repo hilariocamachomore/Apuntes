@@ -1,6 +1,7 @@
 package com.hectortellobalaguer.apuntes.activities
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -11,6 +12,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.hectortellobalaguer.apuntes.R
 
 class PrimeraActivity : AppCompatActivity() {
+
 
     var tvSaludo: TextView? = null
     var etNombre: EditText? = null
@@ -38,6 +40,12 @@ class PrimeraActivity : AppCompatActivity() {
         }
 
     }
-
+    fun saludo(view: View) {
+        if (etNombre?.text!!.isNotEmpty()) {
+            tvSaludo?.text = "Holasss ${etNombre?.text}"
+        }else{
+            tvSaludo?.text = "Hola Anónimo"
+        }
+    }
 
 }

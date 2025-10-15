@@ -1,8 +1,8 @@
 package com.hectortellobalaguer.apuntes
 
 fun main() {
-//   muestraDeVariables()
-    entradaSalidaDatos()
+   muestraDeVariables()
+//    entradaSalidaDatos()
 //    controlNulos()
 //    operadores()
 
