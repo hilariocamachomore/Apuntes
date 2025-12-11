@@ -1,7 +1,7 @@
 package com.hectortellobalaguer.apuntes
 
 fun main(){
-    alternativas()
+    //alternativas()
     repetitivas()
 }
 

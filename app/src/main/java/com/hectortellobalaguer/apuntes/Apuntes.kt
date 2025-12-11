@@ -65,6 +65,5 @@ fun muestraDeVariables(){
     println("numeroFavorito : $numeroFavorito")
     println("test : $test")
     println("estoyFeliz : $estoyFeliz")
-
 }
 
