@@ -91,12 +91,12 @@ class Cuadrado(val lado: Double) : Figura() {
 
 fun main(){
 
-//    InstanciaObjetos()
+    InstanciaObjetos()
 //    Constructores()
 //    Encapsulamiento()
 //    Herencia()
 //    Polimorfismo()
-    Abstraccion()
+//    Abstraccion()
 
 }
 

@@ -2,8 +2,8 @@ package com.hectortellobalaguer.apuntes
 
 
 fun main() {
-//  ejemplo1()
-    ejemplo2()
+  ejemplo1()
+//    ejemplo2()
 //  ejemplo3()
 }
 
@@ -14,6 +14,7 @@ fun ejemplo1() {
             println("$i - $j")
         }
     }
+
 }
 
 fun ejemplo2() {

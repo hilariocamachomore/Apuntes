@@ -6,7 +6,7 @@ import java.util.Scanner
 
 fun main() {
 //    ficheros_01_escribenumeros()
-//    ficheros_01_escribenumerosDOS()fi
+//    ficheros_01_escribenumerosDOS()
     ficheros_02_muestrafichero()
     //ficheros_03_sumanumeros()
 }
@@ -43,7 +43,7 @@ fun ficheros_01_escribenumerosDOS() {
     val nombreArchivo = "numerosDOS.txt"
     val rutaCompleta = ruta + nombreArchivo
     val file = File(rutaCompleta)
-    file.delete()
+    //file.delete()
 
     try {
         var numero: Int
