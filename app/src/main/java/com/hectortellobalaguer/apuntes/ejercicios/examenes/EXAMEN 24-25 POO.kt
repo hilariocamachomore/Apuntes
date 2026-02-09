@@ -1,4 +1,4 @@
-package com.hectortellobalaguer.apuntes.ejercicios.poo
+package com.hectortellobalaguer.apuntes.ejercicios.examenes
 
 import kotlin.math.PI
 
